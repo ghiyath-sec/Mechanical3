@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>غياث عبد الرزاق | مهندس تصميم ميكانيكي</title>
-  <meta name="description" content="موقع بورتفوليو غياث عبد الرزاق - مهندس تصميم ميكانيكي متخصص في SolidWorks وAutoCAD وتصميم القوالب والنمذجة ثلاثية الأبعاد" />
+  <title data-i18n="pageTitle">Ghiyath Abd Al-Razzaq | Mechanical Design Engineer</title>
+  <meta name="description" data-i18n-attr="content|metaDesc" content="Ghiyath Abd Al-Razzaq portfolio — mechanical design engineer specializing in SolidWorks, AutoCAD, mold design, and 3D modeling" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -36,7 +36,7 @@
   <div class="cursor-ring" id="cursorRing"></div>
 
   <!-- Back to Top -->
-  <button class="back-top" id="backTop" aria-label="العودة للأعلى">
+  <button class="back-top" id="backTop" data-i18n-attr="aria-label|backTop" aria-label="Back to top">
     <svg viewBox="0 0 24 24"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg>
   </button>
 
@@ -44,20 +44,24 @@
   <nav class="navbar" id="navbar">
     <div class="nav-brand">
       <span class="brand-icon">⬡</span>
-      <span>غياث<strong>.M</strong></span>
+<!--         <span><strong>م. </strong>غياث </span>            -->      
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
-      <li><a href="#about" class="nav-link">من أنا</a></li>
-      <li><a href="#skills" class="nav-link">المهارات</a></li>
-      <li><a href="#projects" class="nav-link">المشاريع</a></li>
-      <li><a href="#experience" class="nav-link">الخبرة</a></li>
-      <li><a href="#services" class="nav-link">الخدمات</a></li>
-      <li><a href="#contact" class="nav-link">تواصل</a></li>
+      <li><a href="#hero"       class="nav-link active" data-i18n="navHome">Home</a></li>
+      <li><a href="#about"      class="nav-link" data-i18n="navAbout">About</a></li>
+      <li><a href="#skills"     class="nav-link" data-i18n="navSkills">Skills</a></li>
+      <li><a href="#projects"   class="nav-link" data-i18n="navProjects">Projects</a></li>
+      <li><a href="#experience" class="nav-link" data-i18n="navExperience">Experience</a></li>
+      <li><a href="#services"   class="nav-link" data-i18n="navServices">Services</a></li>
+      <li><a href="#contact"    class="nav-link" data-i18n="navContact">Contact</a></li>
     </ul>
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+      <span class="lang-icon">🌐</span>
+      <span class="lang-label" id="langLabel">AR</span>
+    </button>
   </nav>
 
   <!-- ─── HERO ─── -->
@@ -68,36 +72,35 @@
     <div class="hero-content">
       <div class="hero-badge reveal-up">
         <span class="badge-dot"></span>
-        متاح للعمل
+        <span data-i18n="heroAvailable">Available for Work</span>
       </div>
       <h1 class="hero-name reveal-up">
-        <span class="name-ar">غياث عبد الرزاق</span>
-        <span class="name-en">GHIATH ABD AL‑RAZZAQ</span>
+        <span class="name-ar" data-i18n="heroName">Ghiyath Abd Alrazzaq</span>
       </h1>
       <div class="hero-title reveal-up">
         <span class="title-prefix">///</span>
         <span id="typedText"></span>
         <span class="cursor-blink">|</span>
       </div>
-      <p class="hero-desc reveal-up">
-        أحوّل الأفكار إلى تصاميم ميكانيكية دقيقة قابلة للتصنيع — من النمذجة ثلاثية الأبعاد إلى الرسومات الهندسية النهائية.
+      <p class="hero-desc reveal-up" data-i18n="heroDesc">
+        I transform ideas into precise, manufacturable mechanical designs — from 3D modeling to final engineering drawings.
       </p>
       <div class="hero-actions reveal-up">
         <a href="#contact" class="btn btn-primary">
           <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          تواصل معي
+          <span data-i18n="heroCta">Contact Me</span>
         </a>
         <a href="#" class="btn btn-outline" id="downloadCV">
           <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-          تحميل السيرة الذاتية
+          <span data-i18n="heroCV">Download CV</span>
         </a>
       </div>
       <div class="hero-stats reveal-up">
-        <div class="hstat"><span class="hstat-num" data-target="30">0</span><span>مشروع</span></div>
+        <div class="hstat"><span class="hstat-num" data-target="30">0</span><span data-i18n="statProjects">Projects</span></div>
         <div class="hstat-div"></div>
-        <div class="hstat"><span class="hstat-num" data-target="50">0</span><span>نموذج 3D</span></div>
+        <div class="hstat"><span class="hstat-num" data-target="50">0</span><span data-i18n="stat3D">3D Models</span></div>
         <div class="hstat-div"></div>
-        <div class="hstat"><span class="hstat-num" data-target="3">0</span><span>سنوات خبرة</span></div>
+        <div class="hstat"><span class="hstat-num" data-target="3">0</span><span data-i18n="statYears">Years Experience</span></div>
       </div>
     </div>
 
@@ -164,7 +167,7 @@
     </div>
 
     <div class="scroll-hint">
-      <span>مرّر للأسفل</span>
+      <span data-i18n="scrollHint">Scroll Down</span>
       <div class="scroll-line"><div class="scroll-ball"></div></div>
     </div>
   </section>
@@ -172,7 +175,7 @@
   <!-- ─── ABOUT ─── -->
   <section class="section" id="about">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 01</span> من أنا</div>
+      <div class="section-label reveal-up"><span>// 01</span> <span data-i18n="navAbout">About</span></div>
       <div class="about-grid">
         <div class="about-visual reveal-left">
           <div class="blueprint-card">
@@ -202,20 +205,20 @@
           </div>
         </div>
         <div class="about-content reveal-right">
-          <h2 class="section-title">مهندس تصميم<br/><em>يبني بالدقة والإبداع</em></h2>
-          <p class="about-text">
-            أنا غياث عبد الرزاق، مهندس تصميم ميكانيكي شغوف بتحويل الأفكار إلى حلول هندسية قابلة للتنفيذ. أؤمن بأن التصميم الجيد هو تقاطع بين الدقة الرياضية والرؤية الإبداعية.
+          <h2 class="section-title" data-i18n="aboutTitle">Design Engineer<br/><em>Building with Precision & Creativity</em></h2>
+          <p class="about-text" data-i18n="aboutP1">
+            I'm Ghiyath Abd Al-Razzaq, a mechanical design engineer passionate about turning ideas into actionable engineering solutions. I believe great design sits at the intersection of mathematical precision and creative vision.
           </p>
-          <p class="about-text">
-            أعمل على تصميم قطع الغيار والتجمعات الميكانيكية المعقدة، وتحسين قابلية التصنيع، وإعداد الرسومات الهندسية المفصّلة. التفاصيل الدقيقة ليست مجرد ضرورة — إنها فلسفة عملي.
+          <p class="about-text" data-i18n="aboutP2">
+            I work on designing spare parts and complex mechanical assemblies, improving manufacturability, and preparing detailed engineering drawings. Precision is not just a necessity — it's my work philosophy.
           </p>
           <div class="about-traits">
-            <div class="trait"><span class="trait-icon">◈</span><span>دقة في القياسات والتوليرانس</span></div>
-            <div class="trait"><span class="trait-icon">◈</span><span>تفكير تحليلي لحل المشكلات</span></div>
-            <div class="trait"><span class="trait-icon">◈</span><span>تصاميم موجّهة للتصنيع DFM</span></div>
-            <div class="trait"><span class="trait-icon">◈</span><span>توثيق هندسي منظّم ومفصّل</span></div>
+            <div class="trait"><span class="trait-icon">◈</span><span data-i18n="trait1">Precision in measurements & tolerances</span></div>
+            <div class="trait"><span class="trait-icon">◈</span><span data-i18n="trait2">Analytical thinking for problem solving</span></div>
+            <div class="trait"><span class="trait-icon">◈</span><span data-i18n="trait3">Design for Manufacturing (DFM)</span></div>
+            <div class="trait"><span class="trait-icon">◈</span><span data-i18n="trait4">Organized & detailed engineering documentation</span></div>
           </div>
-          <a href="#contact" class="btn btn-primary">تحدّث معي</a>
+          <a href="#contact" class="btn btn-primary" data-i18n="aboutCta">Talk to Me</a>
         </div>
       </div>
     </div>
@@ -224,55 +227,55 @@
   <!-- ─── SKILLS ─── -->
   <section class="section section-alt" id="skills">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 02</span> المهارات</div>
-      <h2 class="section-title centered reveal-up">الأدوات والكفاءات<br/><em>التقنية</em></h2>
+      <div class="section-label reveal-up"><span>// 02</span> <span data-i18n="navSkills">Skills</span></div>
+      <h2 class="section-title centered reveal-up" data-i18n="skillsTitle">Tools & Technical<br/><em>Competencies</em></h2>
       <div class="skills-grid">
 
         <div class="skill-category reveal-up" data-delay="0">
           <div class="skill-cat-header">
             <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
-            <span>برامج CAD</span>
+            <span data-i18n="skillCat1">CAD Software</span>
           </div>
           <div class="skill-items">
             <div class="skill-item"><div class="skill-name"><span>SolidWorks</span><span>92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
             <div class="skill-item"><div class="skill-name"><span>AutoCAD</span><span>88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>CATIA (أساسي)</span><span>55%</span></div><div class="skill-bar"><div class="skill-fill" data-w="55"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="catiaBeginner">CATIA (Basic)</span><span>55%</span></div><div class="skill-bar"><div class="skill-fill" data-w="55"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category reveal-up" data-delay="1">
           <div class="skill-cat-header">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
-            <span>التصميم الميكانيكي</span>
+            <span data-i18n="skillCat2">Mechanical Design</span>
           </div>
           <div class="skill-items">
-            <div class="skill-item"><div class="skill-name"><span>النمذجة ثلاثية الأبعاد</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>تصميم القوالب</span><span>82%</span></div><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>التحليل الميكانيكي</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skill3DModel">3D Modeling</span><span>90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillMoldDes">Mold Design</span><span>82%</span></div><div class="skill-bar"><div class="skill-fill" data-w="82"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillMechAnal">Mechanical Analysis</span><span>75%</span></div><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category reveal-up" data-delay="2">
           <div class="skill-cat-header">
             <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
-            <span>التصنيع</span>
+            <span data-i18n="skillCat3">Manufacturing</span>
           </div>
           <div class="skill-items">
-            <div class="skill-item"><div class="skill-name"><span>برمجة CNC</span><span>78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>عمليات التصنيع</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>GD&T / الرسم الهندسي</span><span>88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillCNC">CNC Programming</span><span>78%</span></div><div class="skill-bar"><div class="skill-fill" data-w="78"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillMfgOps">Manufacturing Operations</span><span>85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span>GD&amp;T / Engineering Drawing</span><span>88%</span></div><div class="skill-bar"><div class="skill-fill" data-w="88"></div></div></div>
           </div>
         </div>
 
         <div class="skill-category reveal-up" data-delay="3">
           <div class="skill-cat-header">
             <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-            <span>المهارات التقنية</span>
+            <span data-i18n="skillCat4">Technical Skills</span>
           </div>
           <div class="skill-items">
-            <div class="skill-item"><div class="skill-name"><span>تصميم المنتجات</span><span>87%</span></div><div class="skill-bar"><div class="skill-fill" data-w="87"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>التوثيق الهندسي</span><span>92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
-            <div class="skill-item"><div class="skill-name"><span>تحسين التصاميم DFM</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillProdDes">Product Design</span><span>87%</span></div><div class="skill-bar"><div class="skill-fill" data-w="87"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillEngDoc">Engineering Documentation</span><span>92%</span></div><div class="skill-bar"><div class="skill-fill" data-w="92"></div></div></div>
+            <div class="skill-item"><div class="skill-name"><span data-i18n="skillDFM">DFM Optimization</span><span>80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
           </div>
         </div>
 
@@ -283,13 +286,13 @@
   <!-- ─── PROJECTS ─── -->
   <section class="section" id="projects">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 03</span> المشاريع</div>
-      <h2 class="section-title centered reveal-up">أبرز الأعمال<br/><em>الهندسية</em></h2>
+      <div class="section-label reveal-up"><span>// 03</span> <span data-i18n="navProjects">Projects</span></div>
+      <h2 class="section-title centered reveal-up" data-i18n="projectsTitle">Featured Engineering<br/><em>Works</em></h2>
       <div class="projects-filter reveal-up">
-        <button class="filter-btn active" data-filter="all">الكل</button>
-        <button class="filter-btn" data-filter="design">تصميم</button>
-        <button class="filter-btn" data-filter="manufacturing">تصنيع</button>
-        <button class="filter-btn" data-filter="automation">أتمتة</button>
+        <button class="filter-btn active" data-filter="all"        data-i18n="filterAll">All</button>
+        <button class="filter-btn"        data-filter="design"     data-i18n="filterDesign">Design</button>
+        <button class="filter-btn"        data-filter="manufacturing" data-i18n="filterMfg">Manufacturing</button>
+        <button class="filter-btn"        data-filter="automation" data-i18n="filterAuto">Automation</button>
       </div>
       <div class="projects-grid">
 
@@ -299,41 +302,40 @@
               <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><circle cx="40" cy="40" r="20"/><rect x="28" y="28" width="24" height="24" rx="2"/><line x1="40" y1="10" x2="40" y2="20"/><line x1="40" y1="60" x2="40" y2="70"/><line x1="10" y1="40" x2="20" y2="40"/><line x1="60" y1="40" x2="70" y2="40"/><circle cx="40" cy="40" r="5" fill="var(--pc)" opacity="0.5"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">ROBOTIC ARM</text></svg>
             </div>
             <div class="proj-overlay">
-              <button class="proj-view-btn">عرض التفاصيل</button>
+              <button class="proj-view-btn" data-i18n="viewDetails">View Details</button>
             </div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>SolidWorks</span><span>Assembly</span><span>Motion</span></div>
-            <h3 class="proj-title">ذراع روبوتية صناعية</h3>
-            <p class="proj-desc">تصميم ذراع روبوتية 6 محاور للتطبيقات الصناعية، مع دراسة الحركة والتحليل الإجهادي للمفاصل.</p>
+            <h3 class="proj-title" data-i18n="proj1Title">Industrial Robotic Arm</h3>
+            <p class="proj-desc" data-i18n="proj1Desc">Design of a 6-axis robotic arm for industrial applications, including motion study and stress analysis of joints.</p>
           </div>
         </article>
 
         <article class="project-card reveal-up" data-cat="manufacturing">
           <div class="proj-img">
-            <div class="proj-placeholder" style="--pc:#7c3aed">
-              <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><rect x="15" y="20" width="50" height="40" rx="3"/><rect x="25" y="30" width="30" height="20" rx="8"/><line x1="15" y1="35" x2="8" y2="35"/><line x1="65" y1="35" x2="72" y2="35"/><line x1="40" y1="20" x2="40" y2="12"/><circle cx="40" cy="9" r="3" fill="var(--pc)" opacity="0.5"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">MOLD DESIGN</text></svg>
-            </div>
-            <div class="proj-overlay"><button class="proj-view-btn">عرض التفاصيل</button></div>
+            <img src="mold desgin.JPG" alt="Plastic Injection Mold" class="project-image-src" />
+            <div class="proj-overlay"><button class="proj-view-btn" data-i18n="viewDetails">View Details</button></div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>Mold Design</span><span>AutoCAD</span><span>Injection</span></div>
-            <h3 class="proj-title">قالب حقن بلاستيكي</h3>
-            <p class="proj-desc">تصميم قالب حقن كامل لإنتاج غطاء بلاستيكي، شامل نظام التبريد وقنوات الحقن والتجويف.</p>
+            <h3 class="proj-title" data-i18n="proj2Title">Plastic Injection Mold</h3>
+            <p class="proj-desc" data-i18n="proj2Desc">Full injection mold design for producing a plastic cover, including cooling system, injection channels, and cavity.</p>
           </div>
         </article>
+
 
         <article class="project-card reveal-up" data-cat="design">
           <div class="proj-img">
             <div class="proj-placeholder" style="--pc:#f59e0b">
               <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><circle cx="30" cy="45" r="15"/><circle cx="55" cy="40" r="10"/><circle cx="30" cy="45" r="5" fill="var(--pc)" opacity="0.3"/><circle cx="55" cy="40" r="3" fill="var(--pc)" opacity="0.3"/><rect x="20" y="20" width="40" height="8" rx="2"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">GEARBOX</text></svg>
             </div>
-            <div class="proj-overlay"><button class="proj-view-btn">عرض التفاصيل</button></div>
+            <div class="proj-overlay"><button class="proj-view-btn" data-i18n="viewDetails">View Details</button></div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>SolidWorks</span><span>Gears</span><span>Simulation</span></div>
-            <h3 class="proj-title">علبة تروس متعددة السرعات</h3>
-            <p class="proj-desc">تصميم Gearbox ذو 4 سرعات لناقل حركة صناعي، مع حساب نسب التروس وتحليل القوى المؤثرة.</p>
+            <h3 class="proj-title" data-i18n="proj3Title">Multi-Speed Gearbox</h3>
+            <p class="proj-desc" data-i18n="proj3Desc">Design of a 4-speed gearbox for an industrial power transmission system, with gear ratio calculations and force analysis.</p>
           </div>
         </article>
 
@@ -342,12 +344,12 @@
             <div class="proj-placeholder" style="--pc:#10b981">
               <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><rect x="10" y="30" width="60" height="20" rx="2"/><circle cx="20" cy="40" r="8"/><circle cx="60" cy="40" r="8"/><line x1="28" y1="40" x2="52" y2="40" stroke-dasharray="3 2"/><rect x="35" y="25" width="10" height="30"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">CNC MACHINE</text></svg>
             </div>
-            <div class="proj-overlay"><button class="proj-view-btn">عرض التفاصيل</button></div>
+            <div class="proj-overlay"><button class="proj-view-btn" data-i18n="viewDetails">View Details</button></div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>CNC</span><span>G-Code</span><span>Machining</span></div>
-            <h3 class="proj-title">تصميم آلة CNC مصغّرة</h3>
-            <p class="proj-desc">تصميم كامل لآلة CNC ثلاثية المحاور، شامل الهيكل الميكانيكي وأنظمة الحركة وبرمجة G-Code.</p>
+            <h3 class="proj-title" data-i18n="proj4Title">Mini CNC Machine Design</h3>
+            <p class="proj-desc" data-i18n="proj4Desc">Complete design of a 3-axis CNC machine, including mechanical structure, motion systems, and G-Code programming.</p>
           </div>
         </article>
 
@@ -356,12 +358,12 @@
             <div class="proj-placeholder" style="--pc:#ef4444">
               <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><rect x="5" y="35" width="70" height="10" rx="2"/><circle cx="20" cy="40" r="6"/><circle cx="40" cy="40" r="6"/><circle cx="60" cy="40" r="6"/><line x1="5" y1="30" x2="75" y2="30" stroke-dasharray="2 2"/><rect x="15" y="22" width="50" height="8" rx="1" opacity="0.5"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">CONVEYOR</text></svg>
             </div>
-            <div class="proj-overlay"><button class="proj-view-btn">عرض التفاصيل</button></div>
+            <div class="proj-overlay"><button class="proj-view-btn" data-i18n="viewDetails">View Details</button></div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>AutoCAD</span><span>SolidWorks</span><span>Assembly</span></div>
-            <h3 class="proj-title">نظام ناقل صناعي</h3>
-            <p class="proj-desc">تصميم خط نقل مواد صناعي بطول 8 أمتار مع منظومة الدحارج وحزام النقل وأنظمة الدفع الآلي.</p>
+            <h3 class="proj-title" data-i18n="proj5Title">Industrial Conveyor System</h3>
+            <p class="proj-desc" data-i18n="proj5Desc">Design of an 8-meter industrial material conveyor with roller assembly, transport belt, and automated push systems.</p>
           </div>
         </article>
 
@@ -370,12 +372,12 @@
             <div class="proj-placeholder" style="--pc:#06b6d4">
               <svg viewBox="0 0 80 80"><g stroke="var(--pc)" fill="none" stroke-width="1.2"><rect x="20" y="15" width="40" height="50" rx="4"/><rect x="28" y="25" width="24" height="15" rx="2"/><line x1="28" y1="48" x2="52" y2="48"/><line x1="28" y1="54" x2="45" y2="54"/><circle cx="40" cy="58" r="3" fill="var(--pc)" opacity="0.5"/></g><text x="40" y="76" fill="var(--pc)" font-size="5" text-anchor="middle" font-family="monospace">PRODUCT MODEL</text></svg>
             </div>
-            <div class="proj-overlay"><button class="proj-view-btn">عرض التفاصيل</button></div>
+            <div class="proj-overlay"><button class="proj-view-btn" data-i18n="viewDetails">View Details</button></div>
           </div>
           <div class="proj-body">
             <div class="proj-tags"><span>Product Design</span><span>Rendering</span><span>DFM</span></div>
-            <h3 class="proj-title">نموذج منتج صناعي</h3>
-            <p class="proj-desc">تصميم وتطوير منتج استهلاكي من الفكرة حتى النموذج الأولي، مع مراعاة معايير التصنيع والتكلفة.</p>
+            <h3 class="proj-title" data-i18n="proj6Title">Industrial Product Model</h3>
+            <p class="proj-desc" data-i18n="proj6Desc">Design and development of a consumer product from idea to prototype, with manufacturing standards and cost in mind.</p>
           </div>
         </article>
 
@@ -389,19 +391,19 @@
       <div class="stats-grid">
         <div class="stat-item reveal-up">
           <div class="stat-num" data-target="30"><span class="count">0</span>+</div>
-          <div class="stat-label">مشروع مكتمل</div>
+          <div class="stat-label" data-i18n="statLabelProjects">Completed Projects</div>
         </div>
         <div class="stat-item reveal-up">
           <div class="stat-num" data-target="50"><span class="count">0</span>+</div>
-          <div class="stat-label">نموذج ثلاثي الأبعاد</div>
+          <div class="stat-label" data-i18n="statLabel3D">3D Models</div>
         </div>
         <div class="stat-item reveal-up">
           <div class="stat-num" data-target="2000"><span class="count">0</span>+</div>
-          <div class="stat-label">ساعة تصميم</div>
+          <div class="stat-label" data-i18n="statLabelHours">Design Hours</div>
         </div>
         <div class="stat-item reveal-up">
           <div class="stat-num" data-target="120"><span class="count">0</span>+</div>
-          <div class="stat-label">رسمة هندسية</div>
+          <div class="stat-label" data-i18n="statLabelDrawings">Engineering Drawings</div>
         </div>
       </div>
     </div>
@@ -410,47 +412,47 @@
   <!-- ─── EXPERIENCE ─── -->
   <section class="section section-alt" id="experience">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 04</span> الخبرة والتعليم</div>
-      <h2 class="section-title centered reveal-up">المسيرة المهنية<br/><em>والأكاديمية</em></h2>
+      <div class="section-label reveal-up"><span>// 04</span> <span data-i18n="navExperience">Experience</span></div>
+      <h2 class="section-title centered reveal-up" data-i18n="expTitle">Professional &<br/><em>Academic Journey</em></h2>
       <div class="timeline-wrap">
 
         <div class="timeline-item reveal-right">
           <div class="tl-marker"><span>2024</span></div>
           <div class="tl-card">
-            <div class="tl-badge work">عمل</div>
-            <h3>مهندس تصميم ميكانيكي</h3>
-            <span class="tl-company">شركة هندسية — (مستقل / Freelance)</span>
-            <p>تصميم قطع ميكانيكية مخصصة، إعداد رسومات للتصنيع، التواصل مع ورش التصنيع لضمان جودة التنفيذ.</p>
+            <div class="tl-badge work" data-i18n="badgeWork">Work</div>
+            <h3 data-i18n="exp1Role">Mechanical Design Engineer</h3>
+            <span class="tl-company" data-i18n="exp1Company">Engineering Company — Freelance</span>
+            <p data-i18n="exp1Desc">Designing custom mechanical parts, preparing manufacturing drawings, and coordinating with machining workshops to ensure quality execution.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-left">
           <div class="tl-marker"><span>2023</span></div>
           <div class="tl-card">
-            <div class="tl-badge intern">تدريب</div>
-            <h3>مهندس تصميم متدرب</h3>
-            <span class="tl-company">شركة صناعية — قسم الهندسة</span>
-            <p>المشاركة في تصميم قوالب بلاستيكية وأجزاء معدنية، التعلم من فريق هندسي متخصص وتطبيق معايير الجودة الدولية.</p>
+            <div class="tl-badge intern" data-i18n="badgeIntern">Internship</div>
+            <h3 data-i18n="exp2Role">Trainee Design Engineer</h3>
+            <span class="tl-company" data-i18n="exp2Company">Industrial Company — Engineering Department</span>
+            <p data-i18n="exp2Desc">Participated in designing plastic molds and metal parts, learning from a specialized engineering team and applying international quality standards.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-right">
           <div class="tl-marker"><span>2022</span></div>
           <div class="tl-card">
-            <div class="tl-badge edu">تعليم</div>
-            <h3>مشروع التخرج — علبة تروس</h3>
-            <span class="tl-company">الجامعة — قسم الهندسة الميكانيكية</span>
-            <p>تصميم وتحليل Gearbox متعدد السرعات كمشروع تخرج، مع تطبيق برامج المحاكاة والتحليل الإجهادي.</p>
+            <div class="tl-badge edu" data-i18n="badgeEdu">Education</div>
+            <h3 data-i18n="exp3Role">Graduation Project — Gearbox</h3>
+            <span class="tl-company" data-i18n="exp3Company">University — Mechanical Engineering Dept.</span>
+            <p data-i18n="exp3Desc">Design and analysis of a multi-speed Gearbox as a graduation project, applying simulation software and stress analysis.</p>
           </div>
         </div>
 
         <div class="timeline-item reveal-left">
           <div class="tl-marker"><span>2019</span></div>
           <div class="tl-card">
-            <div class="tl-badge edu">تعليم</div>
-            <h3>بكالوريوس هندسة ميكانيكية</h3>
-            <span class="tl-company">كلية الهندسة الميكانيكية</span>
-            <p>التخصص في تصميم الآلات وعمليات التصنيع، مع دورات متخصصة في SolidWorks وCAD/CAM.</p>
+            <div class="tl-badge edu" data-i18n="badgeEdu">Education</div>
+            <h3 data-i18n="exp4Role">B.Sc. Mechanical Engineering</h3>
+            <span class="tl-company" data-i18n="exp4Company">Faculty of Mechanical Engineering</span>
+            <p data-i18n="exp4Desc">Specialization in machine design and manufacturing processes, with specialized courses in SolidWorks and CAD/CAM.</p>
           </div>
         </div>
 
@@ -461,56 +463,56 @@
   <!-- ─── SERVICES ─── -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 05</span> الخدمات</div>
-      <h2 class="section-title centered reveal-up">ماذا أقدّم<br/><em>لعملائي</em></h2>
+      <div class="section-label reveal-up"><span>// 05</span> <span data-i18n="navServices">Services</span></div>
+      <h2 class="section-title centered reveal-up" data-i18n="servicesTitle">What I Offer<br/><em>My Clients</em></h2>
       <div class="services-grid">
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           </div>
-          <h3>التصميم الميكانيكي</h3>
-          <p>تصميم قطع وتجمعات ميكانيكية معقدة بأعلى معايير الدقة الهندسية والكفاءة التشغيلية.</p>
+          <h3 data-i18n="svc1Title">Mechanical Design</h3>
+          <p data-i18n="svc1Desc">Designing complex mechanical parts and assemblies to the highest engineering precision and operational efficiency standards.</p>
         </div>
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-8 2l3 3c-6 1-6 5-6 5 1.28-.91 2.57-1.77 4-2z"/></svg>
           </div>
-          <h3>النمذجة ثلاثية الأبعاد</h3>
-          <p>بناء نماذج 3D دقيقة وكاملة قابلة للتصنيع والمحاكاة باستخدام SolidWorks وAutoCAD.</p>
+          <h3 data-i18n="svc2Title">3D Modeling</h3>
+          <p data-i18n="svc2Desc">Building accurate, complete 3D models ready for manufacturing and simulation using SolidWorks and AutoCAD.</p>
         </div>
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
           </div>
-          <h3>الرسومات الهندسية</h3>
-          <p>إعداد رسومات فنية وتقنية وفق المعايير الدولية ISO/ASME مع جميع الأبعاد والتوليرانسات.</p>
+          <h3 data-i18n="svc3Title">Engineering Drawings</h3>
+          <p data-i18n="svc3Desc">Preparing technical drawings per international ISO/ASME standards with all dimensions and tolerances.</p>
         </div>
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
           </div>
-          <h3>تصميم القوالب</h3>
-          <p>تصميم قوالب الحقن البلاستيكية والقوالب المعدنية مع دراسة خطوط الفصل وأنظمة التبريد.</p>
+          <h3 data-i18n="svc4Title">Mold Design</h3>
+          <p data-i18n="svc4Desc">Designing plastic injection molds and metal dies with parting line studies and cooling system design.</p>
         </div>
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>
           </div>
-          <h3>تحسين التصاميم</h3>
-          <p>مراجعة التصاميم الحالية وتحسينها لتقليل التكاليف وزيادة الكفاءة وتحسين قابلية التصنيع.</p>
+          <h3 data-i18n="svc5Title">Design Optimization</h3>
+          <p data-i18n="svc5Desc">Reviewing and improving existing designs to reduce costs, increase efficiency, and enhance manufacturability.</p>
         </div>
 
         <div class="service-card reveal-up">
           <div class="svc-icon">
             <svg viewBox="0 0 24 24"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg>
           </div>
-          <h3>التوثيق الهندسي</h3>
-          <p>إعداد ملفات التوثيق الكاملة من BOM وتقارير الجودة وملفات CMF وتوثيق العمليات.</p>
+          <h3 data-i18n="svc6Title">Engineering Documentation</h3>
+          <p data-i18n="svc6Desc">Preparing complete documentation files including BOM, quality reports, CMF files, and process documentation.</p>
         </div>
 
       </div>
@@ -526,11 +528,11 @@
           <div class="cv-icon">
             <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.88.18-1.36C18 2.1 15.9 0 13.36 0c-1.3 0-2.43.52-3.27 1.35L9 2.5 7.9 1.35C7.07.52 5.93 0 4.63 0 2.1 0 0 2.1 0 4.64c0 .48.11.92.18 1.36H0v2h20V6zM4.63 4C3.21 4 2 2.79 2 1.37 2 0 3.21 0 4.63 0c.74 0 1.42.29 1.91.78l2.47 2.5c-.3.44-.48.97-.48 1.52H4.63zM13.36 0c1.42 0 2.64 1.21 2.64 2.64 0 1.42-1.22 2.36-2.64 2.36h-3.93c0-.55-.18-1.08-.48-1.52l2.47-2.5C11.94.29 12.62 0 13.36 0zM2 9h8v13H4c-1.1 0-2-.9-2-2V9zm10 13V9h8v11c0 1.1-.9 2-2 2h-6z"/></svg>
           </div>
-          <h2>حمّل سيرتي الذاتية</h2>
-          <p>احصل على نسخة PDF كاملة وشاملة لسيرتي الذاتية مع تفاصيل جميع المشاريع والخبرات</p>
+          <h2 data-i18n="cvTitle">Download My CV</h2>
+          <p data-i18n="cvDesc">Get a complete, comprehensive PDF of my resume with details of all projects and experience</p>
           <a href="#" class="btn btn-glow" id="cvDownloadMain">
             <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-            تحميل السيرة الذاتية — PDF
+            <span data-i18n="cvBtn">Download CV — PDF</span>
           </a>
         </div>
       </div>
@@ -540,8 +542,8 @@
   <!-- ─── CONTACT ─── -->
   <section class="section section-alt" id="contact">
     <div class="container">
-      <div class="section-label reveal-up"><span>// 06</span> تواصل</div>
-      <h2 class="section-title centered reveal-up">هل لديك مشروع؟<br/><em>لنتحدث</em></h2>
+      <div class="section-label reveal-up"><span>// 06</span> <span data-i18n="navContact">Contact</span></div>
+      <h2 class="section-title centered reveal-up" data-i18n="contactTitle">Have a Project?<br/><em>Let's Talk</em></h2>
       <div class="contact-grid">
         <div class="contact-info reveal-left">
           <div class="cinfo-item">
@@ -549,8 +551,8 @@
               <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             </div>
             <div>
-              <span class="cinfo-label">البريد الإلكتروني</span>
-              <a href="mailto:ghiath@example.com">ghiath.design@email.com</a>
+              <span class="cinfo-label" data-i18n="contactEmail">Email</span>
+              <a href="mailto:ghiath@example.com">ghiyath.gg.1@email.com</a>
             </div>
           </div>
           <div class="cinfo-item">
@@ -558,8 +560,8 @@
               <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             </div>
             <div>
-              <span class="cinfo-label">رقم الهاتف</span>
-              <a href="tel:+963xxxxxxxxx">+963 XXX XXX XXX</a>
+              <span class="cinfo-label" data-i18n="contactPhone">Phone</span>
+              <a href="tel:+963930348565">+963 930 348 565</a>
             </div>
           </div>
           <div class="cinfo-social">
@@ -575,32 +577,32 @@
         <form class="contact-form reveal-right" id="contactForm" novalidate>
           <div class="form-row">
             <div class="form-group">
-              <label for="fname">الاسم</label>
-              <input type="text" id="fname" name="name" placeholder="اسمك الكامل" required />
+              <label for="fname" data-i18n="formName">Name</label>
+              <input type="text" id="fname" name="name" data-i18n-attr="placeholder|formNamePh" placeholder="Your full name" required />
               <span class="form-err" id="nameErr"></span>
             </div>
             <div class="form-group">
-              <label for="femail">البريد الإلكتروني</label>
+              <label for="femail" data-i18n="formEmail">Email</label>
               <input type="email" id="femail" name="email" placeholder="your@email.com" required />
               <span class="form-err" id="emailErr"></span>
             </div>
           </div>
           <div class="form-group">
-            <label for="fsubject">الموضوع</label>
-            <input type="text" id="fsubject" name="subject" placeholder="موضوع رسالتك" />
+            <label for="fsubject" data-i18n="formSubject">Subject</label>
+            <input type="text" id="fsubject" name="subject" data-i18n-attr="placeholder|formSubjectPh" placeholder="Subject of your message" />
           </div>
           <div class="form-group">
-            <label for="fmsg">الرسالة</label>
-            <textarea id="fmsg" name="message" rows="5" placeholder="صف مشروعك أو استفسارك..." required></textarea>
+            <label for="fmsg" data-i18n="formMsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" data-i18n-attr="placeholder|formMsgPh" placeholder="Describe your project or inquiry..." required></textarea>
             <span class="form-err" id="msgErr"></span>
           </div>
           <button type="submit" class="btn btn-primary btn-full">
             <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
-            إرسال الرسالة
+            <span data-i18n="formSend">Send Message</span>
           </button>
           <div class="form-success" id="formSuccess">
             <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-            شكراً! سأتواصل معك قريباً.
+            <span data-i18n="formSuccessMsg">Thank you! I'll be in touch soon.</span>
           </div>
         </form>
       </div>
@@ -613,16 +615,16 @@
       <div class="footer-top">
         <div class="footer-brand">
           <span class="brand-icon">⬡</span>
-          <span>غياث<strong>.M</strong></span>
-          <p>مهندس تصميم ميكانيكي — بناء المستقبل بالدقة والإبداع</p>
+          <span>Ghiyath<strong>.M</strong></span>
+          <p data-i18n="footerTagline">Mechanical Design Engineer — Building the future with precision and creativity</p>
         </div>
         <div class="footer-links">
-          <a href="#hero">الرئيسية</a>
-          <a href="#about">من أنا</a>
-          <a href="#skills">المهارات</a>
-          <a href="#projects">المشاريع</a>
-          <a href="#services">الخدمات</a>
-          <a href="#contact">تواصل</a>
+          <a href="#hero"       data-i18n="navHome">Home</a>
+          <a href="#about"      data-i18n="navAbout">About</a>
+          <a href="#skills"     data-i18n="navSkills">Skills</a>
+          <a href="#projects"   data-i18n="navProjects">Projects</a>
+          <a href="#services"   data-i18n="navServices">Services</a>
+          <a href="#contact"    data-i18n="navContact">Contact</a>
         </div>
         <div class="footer-social">
           <a href="#" aria-label="LinkedIn">in</a>
@@ -631,8 +633,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2024 غياث عبد الرزاق — جميع الحقوق محفوظة</span>
-        <span class="footer-made">صُنع بـ <span class="heart">♥</span> للهندسة</span>
+        <span data-i18n="footerCopy">© 2026 Ghiyath Abd Al-Razzaq — All rights reserved</span>
+        <span class="footer-made" data-i18n="footerMade">Made with <span class="heart">♥</span> for Engineering</span>
       </div>
     </div>
   </footer>
